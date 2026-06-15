@@ -1,0 +1,5 @@
+{
+    "dependencies": {
+        "@mycompany/lodash": "^4.17.1"
+    }
+}
