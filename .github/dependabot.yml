@@ -7,18 +7,18 @@ updates:
     open-pull-requests-limit: 15
     registries:
       - jfrog-artifactory
-      # - jfrog-artifactory-2
+      - jfrog-artifactory-2
 
 registries:
   jfrog-artifactory:
     type: "npm-registry"
     url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
     token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
-    # scope: "@mycompany"
+    scope: "@mycompany"
 
-  # jfrog-artifactory-2:
-  #   type: "npm-registry"
-  #   url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
-  #   token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
-    # scope: "@abhishekbhaskar"
+  jfrog-artifactory-2:
+    type: "npm-registry"
+    url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
+    token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
+    scope: "@abhishekbhaskar"
     
