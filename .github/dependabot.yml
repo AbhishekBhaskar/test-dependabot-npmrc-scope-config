@@ -15,10 +15,12 @@ registries:
     url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
     token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
     # scope: "@mycompany"
+    replaces-base: true
 
   jfrog-artifactory-2:
     type: "npm-registry"
     url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
     token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
     # scope: "@abhishekbhaskar"
+    replaces-base: true
     
