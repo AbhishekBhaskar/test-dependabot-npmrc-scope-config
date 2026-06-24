@@ -14,7 +14,7 @@ registries:
     type: "npm-registry"
     url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
     token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
-    scope: "@mycompany"
+    # scope: "@mycompany"
 
   jfrog-artifactory-2:
     type: "npm-registry"
