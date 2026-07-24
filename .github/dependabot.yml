@@ -36,6 +36,7 @@ registries:
   npmjs-base:
     type: "npm-registry"
     url: "https://registry.npmjs.org"
+    token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
     replaces-base: true
 
   jfrog-scoped:
