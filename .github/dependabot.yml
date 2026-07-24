@@ -9,6 +9,15 @@ updates:
       - jfrog-artifactory
       - jfrog-artifactory-2
 
+  - package-ecosystem: "npm"
+    directory: "/scope-replace-base"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 15
+    registries:
+      - npmjs-base
+      - jfrog-scoped
+
 registries:
   jfrog-artifactory:
     type: "npm-registry"
@@ -23,4 +32,15 @@ registries:
     token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
     scope: "@abhishekbhaskar"
     # replaces-base: true
+
+  npmjs-base:
+    type: "npm-registry"
+    url: "https://registry.npmjs.org"
+    replaces-base: true
+
+  jfrog-scoped:
+    type: "npm-registry"
+    url: "https://jfrogghdemo.jfrog.io/artifactory/api/npm/dpndbt-pvt-repo-npm-key/"
+    token: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
+    scope: "@mycompany"
     
